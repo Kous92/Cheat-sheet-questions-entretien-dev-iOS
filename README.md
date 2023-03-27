@@ -56,6 +56,25 @@ L'abstraction est un concept clé de la POO car elle permet de modéliser des sy
 
 ## <a name="designpatterns"></a>Questions sur les designs patterns
 
+### Qu'est-ce qu'un design pattern ?
+
+Un design pattern est une solution éprouvée et réutilisable à un problème commun de conception de logiciel. Il s'agit d'un modèle général de conception de code qui peut être adapté et réutilisé dans différents projets pour résoudre des problèmes similaires.
+
+Les design patterns sont souvent utilisés pour résoudre des problèmes de conception courants dans la programmation orientée objet, tels que la création d'objets, la gestion des relations entre les objets, la structuration du code, la gestion des erreurs, etc.
+
+Ils permettent de produire un code plus clair, plus maintenable et plus réutilisable, tout en réduisant les erreurs et en améliorant l'efficacité du développement de logiciels.
+
+### Qu'est-ce que l'injection de dépendances ?
+
+L'injection de dépendances est un pattern où un objet reçoit d'autres objets dont il dépend.
+
+La classe dépendant ici d'une abstraction, l'injection d'une dépendance peut s'effectuer de l'extérieur de 3 façons:
+- Initialiseur
+- Méthode
+- Propriété (affectation directe)
+
+L'injection de dépendances permet de réduire le couplage, d'avoir un code réutilisable, testable et maintenable.
+
 ## <a name="swift"></a>Questions sur le langage Swift
 
 ## <a name="git"></a>Questions sur Git
