@@ -92,6 +92,12 @@ Les 3 commandes de fusion sont les suivantes:
 
 ### Quelle est la différence entre `merge` et `rebase` ?
 
+La différence entre `git merge` et `git rebase` réside dans la façon où les modifications de 2 branches sont fusionnées.
+
+`git merge` va créer un nouveau commit de fusion qui combine les modifications de deux branches. Cela peut entraîner une historique de développement avec des branches qui se croisent et des commits de fusion qui peuvent rendre l'historique plus difficile à suivre.
+
+En revanche, `git rebase` réécrit l'historique de la branche en replaçant les commits de la branche courante sur le dessus de la branche cible. Cela crée une historique de développement linéaire et plus facile à suivre. En effet, cela permet de garder l'historique des commits propre et facilement compréhensible.
+
 ### Que fait la commande `git cherry-pick` ?
 
 `git cherry-pick` permet d'appliquer les modifications d'un commit spécifique d'une branche à une autre branche en y créant un nouveau commit.
