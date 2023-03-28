@@ -79,11 +79,19 @@ L'injection de dépendances permet de réduire le couplage, d'avoir un code réu
 
 ## <a name="git"></a>Questions sur Git
 
+### Quelles sont les 3 commandes de fusion ?
+
+Les 3 commandes de fusion sont les suivantes:
+- `git cherry-pick`
+- `git merge`
+- `git rebase`
+
 ### Que fait la commande `git rebase` ?
 
 `git rebase` est une commande avancée de fusion qui permet de réécrire l’historique d'une branche en appliquant les commits de l’autre branche, après ceux de la branche actuelle. Cela permet de garder un historique de développement propre et lisible.
 
 ### Quelle est la différence entre `merge` et `rebase` ?
+
 ### Que fait la commande `git cherry-pick` ?
 
 `git cherry-pick` permet d'appliquer les modifications d'un commit spécifique d'une branche à une autre branche en y créant un nouveau commit.
