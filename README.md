@@ -77,6 +77,13 @@ L'injection de dépendances permet de réduire le couplage, d'avoir un code réu
 
 ## <a name="swift"></a>Questions sur le langage Swift
 
+### Quelle est la différence entre `let` et `var` ?
+
+- `let` permet de créer une valeur constante après initialisation.
+- `var` permet de créer une valeur qui peut changer à tout moment.
+
+La différence entre `let` et `var` est ici la mutabilité d'une valeur tout au long de l'exécution du programme. 
+
 ### Qu'est-ce qu'un optionnel ?
 
 Un optionnel est une constante ou variable qui peut contenir ou non une valeur. Ils sont utilisés pour représenter des valeurs qui peuvent être absentes à un moment donné (`nil`).
@@ -106,6 +113,14 @@ L'optional binding est souvent utilisé en conjonction avec la déclaration if l
 ### Qu'est-ce que le nil coalescing ?
 
 Le `nil` coalescing est un opérateur qui garantit que l'optionnel contient une valeur. Avec `??`, l'optionnel déballe (unwrappe) sa valeur si elle est présente ou retourne une valeur par défaut si l'optionnel est `nil`.
+
+### Qu'est-ce que la propriété `lazy` ?
+
+Une propriété `lazy` est un atrribut d'une classe ou d'une structure en Swift qui n'est pas initialisé tant qu'il n'est pas utilisé pour la première fois. 
+
+Les propriétés `lazy` sont utiles pour les propriétés qui sont coûteuses à initialiser ou qui ne sont pas nécessaires dans tous les cas d'utilisation. Elles permettent donc d'optimiser les performances du code.
+
+Une propriété de ce type-là se déclare avec le mot-clé `lazy` et doit être une variable car sa valeur peut être modifiée dès son initialisation.
 
 ## <a name="git"></a>Questions sur Git
 
