@@ -101,3 +101,12 @@ En revanche, `git rebase` réécrit l'historique de la branche en replaçant les
 ### Que fait la commande `git cherry-pick` ?
 
 `git cherry-pick` permet d'appliquer les modifications d'un commit spécifique d'une branche à une autre branche en y créant un nouveau commit.
+
+### Qu'est-ce que Gitflow ?
+
+Gitflow est un modèle de branching Git alternatif qui utilise des branches de fonctionnalité et plusieurs branches primaires. Il permet un flux de travail efficace et collaboratif pour les projets de développement logiciel.
+
+Gitflow se met en application avec 2 branches principales qui sont `main`/`master` (production) et `develop` (développement). On utilise des branches de fonctionnalité qui sont:
+- `feature`: Une feature non finie qui sera mergée dans `develop`
+- `release`: La prochaine release à partir en production (elle sera mergée dans `master`/`main` une fois en production)
+- `hotfix` : Lorsqu'il y a un bug urgent à corriger (c'est comme une release sauf qu'elle part de `master`/`main` et non de `develop`)
