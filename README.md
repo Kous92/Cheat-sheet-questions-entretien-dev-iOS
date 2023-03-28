@@ -77,6 +77,36 @@ L'injection de dépendances permet de réduire le couplage, d'avoir un code réu
 
 ## <a name="swift"></a>Questions sur le langage Swift
 
+### Qu'est-ce qu'un optionnel ?
+
+Un optionnel est une constante ou variable qui peut contenir ou non une valeur. Ils sont utilisés pour représenter des valeurs qui peuvent être absentes à un moment donné (`nil`).
+
+Un optionnel se déclare avec `?`, et doit être assigné à une valeur ou `nil` si c'est une constante. Lorsqu'on souhaite accéder à son contenu, on peut y accéder avec:
+- L'unwrapping (déballage)
+- l'optional chaining
+- L'optional binding
+- Le nil coalescing avec `??`
+
+### Qu'est-ce que l'optional chaining (chaînage d'optionnels) ?
+
+L'optional chaining permet de manipuler des propriétés et des méthodes d'un objet optionnel de manière sûre et concise.
+
+L'optional chaining permet d'accéder à une propriété ou d'appeler une méthode sur un objet optionnel sans avoir besoin de le déballer (unwrapping) en utilisant un opérateur de chaînage.
+
+Si l'objet optionnel a une valeur, l'appel de la propriété ou de la méthode est effectué normalement. Si l'objet optionnel n'a pas de valeur, l'appel est simplement ignoré et retourne `nil`.
+
+L'optional chaining s'effectue avec l'opérateur de chaînage `?` ou de manière forcée `!` (au risque d'un crash si c'est `nil`).
+
+### Qu'est-ce que l'optional binding (liaison d'optionnel) ?
+
+L'optional binding est une fonctionnalité du langage Swift qui permet de déballer (unwrapping) en toute sécurité des objets optionnels et de les assigner à des variables ou des constantes.
+
+L'optional binding est souvent utilisé en conjonction avec la déclaration if let ou guard let. Ces déclarations permettent de vérifier si un objet optionnel a une valeur ou pas. Si l'objet a une valeur, il est déballé et assigné à une variable ou une constante. Si l'objet n'a pas de valeur, la déclaration est simplement ignorée.
+
+### Qu'est-ce que le nil coalescing ?
+
+Le `nil` coalescing est un opérateur qui garantit que l'optionnel contient une valeur. Avec `??`, l'optionnel déballe (unwrappe) sa valeur si elle est présente ou retourne une valeur par défaut si l'optionnel est `nil`.
+
 ## <a name="git"></a>Questions sur Git
 
 ### Quelles sont les 3 commandes de fusion ?
