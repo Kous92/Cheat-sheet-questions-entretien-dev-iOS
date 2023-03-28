@@ -81,6 +81,8 @@ L'injection de dépendances permet de réduire le couplage, d'avoir un code réu
 
 ### Que fait la commande `git rebase` ?
 
+`git rebase` est une commande avancée de fusion qui permet de réécrire l’historique d'une branche en appliquant les commits de l’autre branche, après ceux de la branche actuelle. Cela permet de garder un historique de développement propre et lisible.
+
 ### Quelle est la différence entre `merge` et `rebase` ?
 ### Que fait la commande `git cherry-pick` ?
 
