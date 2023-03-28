@@ -67,14 +67,14 @@ Ils permettent de produire un code plus clair, plus maintenable et plus réutili
 
 ### Qu'est-ce que l'injection de dépendances ?
 
-L'injection de dépendances est un pattern où un objet reçoit d'autres objets dont il dépend.
+L'injection de dépendances est un pattern où un objet reçoit d'autres objets dont il dépend de manière dynamique afin d'éviter une dépendance directe entre deux classes.
 
-La classe dépendant ici d'une abstraction, l'injection d'une dépendance peut s'effectuer de l'extérieur de 3 façons:
+L'injection de dépendances permet de réduire le couplage, d'avoir un code réutilisable, testable et maintenable.
+
+La classe ou structure dépendant ici d'une abstraction, l'injection d'une dépendance peut s'effectuer de l'extérieur de 3 façons:
 - Initialiseur
 - Méthode
 - Propriété (affectation directe)
-
-L'injection de dépendances permet de réduire le couplage, d'avoir un code réutilisable, testable et maintenable.
 
 ## <a name="swift"></a>Questions sur le langage Swift
 
