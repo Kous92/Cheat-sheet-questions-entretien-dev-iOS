@@ -76,6 +76,14 @@ La classe ou structure dépendant ici d'une abstraction, l'injection d'une dépe
 - Méthode
 - Propriété (affectation directe)
 
+### Qu'est-ce que le singleton ?
+
+Le singleton est un pattern qui permet à une classe d'avoir une seule instance et de n'avoir que cette instance comme point d'accès global.
+
+Le singleton permet alors à d'autres parties du code de l'application d'exploiter les méthodes de cette même instance.
+
+Un singleton est une classe qui se met en place avec un initialiseur privé et une méthode ou un attribut statique qui contient une instance de cette même classe.
+
 ## <a name="swift"></a>Questions sur le langage Swift
 
 ### Quelle est la différence entre `let` et `var` ?
@@ -125,7 +133,7 @@ Les propriétés `lazy` sont utiles pour les propriétés qui sont coûteuses à
 
 Une propriété de ce type-là se déclare avec le mot-clé `lazy` et doit être une variable car sa valeur peut être modifiée dès son initialisation.
 
-## <a name="architectures"></a>Questions sur les architectures ?
+## <a name="architectures"></a>Questions sur les architectures
 
 ## <a name="git"></a>Questions sur Git
 
