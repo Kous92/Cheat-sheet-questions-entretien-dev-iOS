@@ -71,7 +71,7 @@ L'injection de dépendances est un pattern où un objet reçoit d'autres objets 
 
 L'injection de dépendances permet de réduire le couplage, d'avoir un code réutilisable, testable et maintenable.
 
-La classe ou structure dépendant ici d'une abstraction, l'injection d'une dépendance peut s'effectuer de l'extérieur de 3 façons:
+La classe ou structure dépendant ici d'un objet (abstrait ou concret), l'injection d'une dépendance peut s'effectuer de l'extérieur de 3 façons:
 - Initialiseur
 - Méthode
 - Propriété (affectation directe)
@@ -80,9 +80,18 @@ La classe ou structure dépendant ici d'une abstraction, l'injection d'une dépe
 
 Le singleton est un pattern qui permet à une classe d'avoir une seule instance et de n'avoir que cette instance comme point d'accès global.
 
-Le singleton permet alors à d'autres parties du code de l'application d'exploiter les méthodes de cette même instance.
+Le singleton permet alors à d'autres parties du code de l'application d'accéder aux méthodes de cette même instance. Il permet aussi de réduire la modularité du code.
 
 Un singleton est une classe qui se met en place avec un initialiseur privé et une méthode ou un attribut statique qui contient une instance de cette même classe.
+
+### Pourquoi le singleton est-il considéré comme un anti-pattern ?
+
+Le singleton est considéré comme un anti-pattern car il ne permet pas de respecter les principes du SOLID qui sont les suivants:
+- Responsabilité unique: Le singleton a plusieurs responsabilités
+- Ouvert/fermé: le singleton retourne toujours sa propre instance et n'est pas ouvert à l'extension.
+- Inversion de dépendances
+
+Mais aussi du fait que ça va impacter les autres classes avec un couplage serré, que c'est diffcilement testable et problématique dans un environnement multithreadé.
 
 ## <a name="swift"></a>Questions sur le langage Swift
 
