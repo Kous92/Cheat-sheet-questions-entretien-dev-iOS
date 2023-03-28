@@ -8,6 +8,7 @@ Ce format d'entretien est une épreuve de communication et de savoir-faire techn
 - [Questions générales de programmation](#general)
 - [Questions sur les design patterns](#designpatterns)
 - [Questions sur le langage Swift](#swift)
+- [Questions sur les architectures](#architectures)
 - [Questions Git](#git)
 
 ## <a name="general"></a>Questions générales de programmation
@@ -108,7 +109,9 @@ L'optional chaining s'effectue avec l'opérateur de chaînage `?` ou de manière
 
 L'optional binding est une fonctionnalité du langage Swift qui permet de déballer (unwrapping) en toute sécurité des objets optionnels et de les assigner à des variables ou des constantes.
 
-L'optional binding est souvent utilisé en conjonction avec la déclaration if let ou guard let. Ces déclarations permettent de vérifier si un objet optionnel a une valeur ou pas. Si l'objet a une valeur, il est déballé et assigné à une variable ou une constante. Si l'objet n'a pas de valeur, la déclaration est simplement ignorée.
+L'optional binding permet de vérifier si un objet optionnel a une valeur ou pas. Si l'objet a une valeur, il est déballé et assigné à une variable ou une constante. Si l'objet n'a pas de valeur, la déclaration est simplement ignorée.
+
+L'optional binding s'utilise avec les blocs conditionnels `if let` ou `guard let`.
 
 ### Qu'est-ce que le nil coalescing ?
 
@@ -121,6 +124,8 @@ Une propriété `lazy` est un atrribut d'une classe ou d'une structure en Swift 
 Les propriétés `lazy` sont utiles pour les propriétés qui sont coûteuses à initialiser ou qui ne sont pas nécessaires dans tous les cas d'utilisation. Elles permettent donc d'optimiser les performances du code.
 
 Une propriété de ce type-là se déclare avec le mot-clé `lazy` et doit être une variable car sa valeur peut être modifiée dès son initialisation.
+
+## <a name="architectures"></a>Questions sur les architectures ?
 
 ## <a name="git"></a>Questions sur Git
 
@@ -137,11 +142,11 @@ Les 3 commandes de fusion sont les suivantes:
 
 ### Quelle est la différence entre `merge` et `rebase` ?
 
-La différence entre `git merge` et `git rebase` réside dans la façon où les modifications de 2 branches sont fusionnées.
-
 `git merge` va créer un nouveau commit de fusion qui combine les modifications de deux branches. Cela peut entraîner une historique de développement avec des branches qui se croisent et des commits de fusion qui peuvent rendre l'historique plus difficile à suivre.
 
-En revanche, `git rebase` réécrit l'historique de la branche en replaçant les commits de la branche courante sur le dessus de la branche cible. Cela crée une historique de développement linéaire et plus facile à suivre. En effet, cela permet de garder l'historique des commits propre et facilement compréhensible.
+En revanche, `git rebase` réécrit l'historique de la branche en repmlaçant les commits de la branche courante sur le dessus de la branche cible. Cela crée une historique de développement linéaire et plus facile à suivre. En effet, cela permet de garder l'historique des commits propre et facilement compréhensible.
+
+La différence entre `git merge` et `git rebase` réside dans la mise en disposition de l'historique des commits après la fusion de 2 branches.
 
 ### Que fait la commande `git cherry-pick` ?
 
