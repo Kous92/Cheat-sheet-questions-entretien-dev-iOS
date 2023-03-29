@@ -193,6 +193,12 @@ Un protocole est une interface qui définit un ensemble de propriétés et de m�
 
 Les protocoles sont utilisés pour définir des fonctionnalités génériques dans une application. Ils permettent de décrire les comportements attendus d'un type sans définir la manière dont ce comportement doit être implémenté. Cela permet d'abstraire les détails de l'implémentation et de rendre le code plus modulaire, réutilisable et facilement testable.
 
+### Qu'est-ce qu'une énumération ?
+
+En Swift, une énumération est un type de données qui permet de définir un ensemble de valeurs possibles.
+
+Les énumérations peuvent également avoir des valeurs associées, des méthodes et des initialisateurs, ce qui les rend plus flexibles et utiles pour une variété de tâches.
+
 ## <a name="architectures"></a>Questions sur les architectures
 ### Qu'est-ce que l'architecture MVC ?
 
