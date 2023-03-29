@@ -93,7 +93,7 @@ Le singleton est considéré comme un anti-pattern car il ne permet pas de respe
 
 Mais aussi du fait que ça va impacter les autres classes avec un couplage serré, que c'est diffcilement testable et problématique dans un environnement multithreadé.
 
-### Qu'est-ce que la délégation ?
+### Qu'est-ce que la délégation (`delegate`) ?
 
 La délégation est un pattern qui permet à une classe de déléguer certaines de ses responsabilités à une autre classe.
 
@@ -162,12 +162,23 @@ Une propriété de ce type-là se déclare avec le mot-clé `lazy` et doit être
 
 ### Qu'est-ce que l'architecture MVC ?
 
-MVC pour Model View Controller.
+MVC pour **Model View Controller**.
 - Model: Modèles de données et représentation de l'état de l'application.
 - View: Représentation de l'interface utilisateur, de toutes les vues.
 - Controller: L'intermédiaire entre la vue et le modèle. Il gère toute la logique de communication entre la vue et le modèle.
 
 En UIKit, le Controller se met en place avec un `ViewController` où la construction de la vue, la gestion des actions de l'utilisateur et la logique métier sont définies.
+
+### Qu'est-ce que l'architecture MVVM ?
+
+**MVVM** pour **Model View ViewModel**.
+- Model: Modèles de données représentant une logique métier.
+- View: Représentation de l'interface utilisateur, de toutes les vues et de la gestion des actions utilisateur.
+- ViewModel: L'intermédiaire entre la vue et le modèle, elle gère la logique métier et adapte les données du modèle métier en données à faire afficher par la vue.
+
+L'architecture **MVVM** permet donc de résoudre le problème de l'architecture **MVC** en isolant la logique métier dans un `ViewModel`. Elle permet également de réduire le couplage, et facilte la maintenance et la testabilité.
+
+**MVVM** se met en place avec la liaison de données (data binding) entre la vue et la vue modèle, où la vue s'abonne à un ou plusieurs événements de la vue modèle lorsqu'elle va se mettre à jour.
 
 ## <a name="git"></a>Questions sur Git
 
