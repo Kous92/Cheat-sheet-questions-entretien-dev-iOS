@@ -199,6 +199,14 @@ En Swift, une énumération est un type de données qui permet de définir un en
 
 Les énumérations peuvent également avoir des valeurs associées, des méthodes et des initialisateurs, ce qui les rend plus flexibles et utiles pour une variété de tâches.
 
+### Quelle est la différence entre `strong` et `weak` ?
+
+Une référence `strong` est une référence forte à un objet. Cela signifie que l'objet ne sera pas libéré de la mémoire tant qu'il y aura au moins une référence `strong` pointant vers lui. Par défaut, toutes les références sont des références `strong`.
+
+Une référence `weak` est une référence faible à un objet. Cela signifie que l'objet peut être libéré de la mémoire même s'il y a une référence `weak` pointant vers lui. Si l'objet est libéré de la mémoire, la référence `weak` est automatiquement mise à `nil`.
+
+La principale différence est que `weak` permet dans le cas d'une référence circulaire (où 2 objets sont référencés entre eux), d'éviter les rétentions de cycle (fuites de mémoire, memory leak) lorsque l'un des 2 objets est détruit.
+
 ## <a name="architectures"></a>Questions sur les architectures
 ### Qu'est-ce que l'architecture MVC ?
 
