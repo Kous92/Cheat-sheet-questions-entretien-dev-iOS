@@ -93,13 +93,21 @@ Le singleton est considéré comme un anti-pattern car il ne permet pas de respe
 
 Mais aussi du fait que ça va impacter les autres classes avec un couplage serré, que c'est diffcilement testable et problématique dans un environnement multithreadé.
 
-### Qu'est-ce que la délégation
+### Qu'est-ce que la délégation ?
 
 La délégation est un pattern qui permet à une classe de déléguer certaines de ses responsabilités à une autre classe.
 
 Elle facilite donc la communication entre classes et délivre des messages d'un objet à un autre lorsqu'un événement spécifique se déclenche.
 
 La délégation se met en place par le biais d'un protocole. La classe qui délègue aura une référence faible vers la classe qui exécutera les méthodes du protocole et fera les appels des méthodes de ce dernier. La classe qui impléméntera les méthodes du protocole aura une référence vers la classe qui délègue.
+
+### Qu'est-ce que l'observateur ?
+
+L'observateur est un pattern qui permet à certains objets d’envoyer des notifications concernant leur état à d’autres objets.
+
+Il permet aux objets qui implémentent une interface d'abonnement, de s’inscrire et de se désinscrire de ces événements, afin de réagir à ces derniers qui se déclenchent chez d’autres objets sans se coupler à leurs classes.
+
+L'observateur peut se mettre en place avec une propriété observée, RxSwift, Combine, des notifications, ou encore les propriétés d'état de SwiftUI
 
 ## <a name="swift"></a>Questions sur le langage Swift
 
