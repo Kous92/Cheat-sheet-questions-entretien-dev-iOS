@@ -179,6 +179,14 @@ Les propriétés `lazy` sont utiles pour les propriétés qui sont coûteuses à
 
 Une propriété de ce type-là se déclare avec le mot-clé `lazy` et doit être une variable car sa valeur peut être modifiée dès son initialisation.
 
+### Qu'est-ce que le bloc `defer` en Swift ?
+
+`defer` est un bloc de code qui sera exécuté après la dernière instruction d'un bloc où il est défini (`func`, `while`, `do`, `init`), juste avant de sortir du scope actuel.
+
+`defer` permet en général de nettoyer des ressources ou encore de débloquer une ressource lors d'une implémentation thread-safe d'une section critique avec un verrou pour éviter des deadlocks (interblocages) ou encore des fuites de mémoire.
+
+Si plusieurs blocs `defer` sont définis dans un même scope, les blocs sont exécutés dans l'ordre inverse, du dernier au premier.
+
 ## <a name="architectures"></a>Questions sur les architectures
 ### Qu'est-ce que l'architecture MVC ?
 
