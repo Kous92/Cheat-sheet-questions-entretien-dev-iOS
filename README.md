@@ -241,6 +241,21 @@ L'architecture **MVP** permet donc de résoudre le problème de l'architecture *
 
 **MVP** se met en place avec la délégation (`delegate`) entre la vue et la présentation, où la vue implémente les méthodes d'un protocole dédié pour effectuer sa mise à jour tandis que la présentation va avoir une référence faible vers la vue et va appeler les méthodes du protocole.
 
+### Qu'est-ce qu'une Clean Architecture ?
+
+La Clean Architecture est un principe d'architecture permettant d'organiser et de séparer en couches les responsabilités.
+
+La Clean Architecture va donc faciliter la maintenance, la lisibilité et la testabilité du code (adaptée pour la mise en place du TDD: Test Driven Development).
+
+La Clean Architecture assure l'indépendance entre les couches (externe, présentation, use case, entité), garantissant un code flexible étant:
+- Indépendant des frameworks: les frameworks et librairies tierces doivent être pensés comme des outils, et non des cadres contraignants.
+- Testable indépendamment: les tests doivent pouvoir être réalisés sans dépendances entre les parties, et sans dépendances à des éléments externes (API, base de données, …).
+- Indépendante de l’interface utilisateur: l’interface utilisateur doit pouvoir évoluer facilement.
+- Indépendante de la base de données.
+- Indépendante de tout service ou système externe: en résumé, le code doit être indépendant des tierces parties dont il n’assure pas le contrôle.
+
+Ce principe est indépendant de toute technolgie et plateforme et aussi de toute architecture, en effet, on peut utiliser des architectures comme MVVM, MVP, VIP,... et les imbriquer dans une Clean Architecture en appliquant le principe des couches.
+
 ## <a name="git"></a>Questions sur Git
 
 ### Quelles sont les 3 commandes de fusion ?
