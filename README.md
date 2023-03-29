@@ -160,6 +160,15 @@ Une propriété de ce type-là se déclare avec le mot-clé `lazy` et doit être
 
 ## <a name="architectures"></a>Questions sur les architectures
 
+### Qu'est-ce que l'architecture MVC ?
+
+MVC pour Model View Controller.
+- Model: Modèles de données et représentation de l'état de l'application.
+- View: Représentation de l'interface utilisateur, de toutes les vues.
+- Controller: L'intermédiaire entre la vue et le modèle. Il gère toute la logique de communication entre la vue et le modèle.
+
+En UIKit, le Controller se met en place avec un `ViewController` où la construction de la vue, la gestion des actions de l'utilisateur et la logique métier sont définies.
+
 ## <a name="git"></a>Questions sur Git
 
 ### Quelles sont les 3 commandes de fusion ?
