@@ -187,6 +187,12 @@ Une propriété de ce type-là se déclare avec le mot-clé `lazy` et doit être
 
 Si plusieurs blocs `defer` sont définis dans un même scope, les blocs sont exécutés dans l'ordre inverse, du dernier au premier.
 
+### Qu'est-ce qu'un protocole ?
+
+Un protocole est une interface qui définit un ensemble de propriétés et de méthodes que les objets conformes au protocole doivent implémenter.
+
+Les protocoles sont utilisés pour définir des fonctionnalités génériques dans une application. Ils permettent de décrire les comportements attendus d'un type sans définir la manière dont ce comportement doit être implémenté. Cela permet d'abstraire les détails de l'implémentation et de rendre le code plus modulaire, réutilisable et facilement testable.
+
 ## <a name="architectures"></a>Questions sur les architectures
 ### Qu'est-ce que l'architecture MVC ?
 
