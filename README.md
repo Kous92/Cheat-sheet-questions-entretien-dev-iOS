@@ -160,6 +160,17 @@ L'optional binding s'utilise avec les blocs conditionnels `if let` ou `guard let
 
 Le `nil` coalescing est un opérateur qui garantit que l'optionnel contient une valeur. Avec `??`, l'optionnel déballe (unwrappe) sa valeur si elle est présente ou retourne une valeur par défaut si l'optionnel est `nil`.
 
+### Quelle sont les différences entre un `class` et un `struct` ?
+
+Les classes et les structures sont des modèles d'objet:
+- Qui ont des attributs et méthodes. 
+- Qui peuvent être étendus avec une extension.
+- Qui peuvent conformer à des protocoles.
+- Qui peuvent utiliser des types génériques.
+- Qui peuvent définir des initialiseurs.
+
+Une classe est un objet de type référence alors qu'une structure est de type valeur (copiée lors d'une affectation). L'héritage et la désinitialisation ne peuvent être utilisés que par des classes. Une instance de structure n'est pas modifiable par défaut (`mutating` est requis pour modifier). Une instance de structure en `let` ne peut pas permettre à un attribut variable d'être modifié une fois initialisé, alors qu'une instance de classe en `let` peut modifier ses attributs variables par affectation.
+
 ### Qu'est-ce que la propriété `lazy` ?
 
 Une propriété `lazy` est un atrribut d'une classe ou d'une structure en Swift qui n'est pas initialisé tant qu'il n'est pas utilisé pour la première fois. 
@@ -169,7 +180,6 @@ Les propriétés `lazy` sont utiles pour les propriétés qui sont coûteuses à
 Une propriété de ce type-là se déclare avec le mot-clé `lazy` et doit être une variable car sa valeur peut être modifiée dès son initialisation.
 
 ## <a name="architectures"></a>Questions sur les architectures
-
 ### Qu'est-ce que l'architecture MVC ?
 
 MVC pour **Model View Controller**.
