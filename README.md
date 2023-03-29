@@ -109,6 +109,16 @@ Il permet aux objets qui implémentent une interface d'abonnement, de s’inscri
 
 L'observateur peut se mettre en place avec une propriété observée, RxSwift, Combine, des notifications, ou encore les propriétés d'état de SwiftUI
 
+### Qu'est-ce que le coordinator ?
+
+Le Coordinator est un pattern qui organise la logique de flux de navigation entre les différents écrans (`ViewController`) et qui isole la logique de navigation de l'interface utilisateur.
+
+L'objectif principal du Coordinator est de rendre le code plus modulaire et plus facilement testable en réduisant la dépendance entre les différents composants de l'application. Il permet également de réduire la complexité de l'architecture de l'application en divisant les responsabilités de chaque composant.
+
+Le coordinator se met en place avec une classe contenant des méthodes pour afficher le premier écran, naviguer d'un écran à un autre, et des attributs pour gérer les références entre les différents coordinators. Le principe de communication entre la vue et le coordinator se fait avec la délégation (`delegate`).
+
+S'applique avec **MVVM** donnant **MVVM-C** ou **MVP** donnant **MVP+C**.
+
 ## <a name="swift"></a>Questions sur le langage Swift
 
 ### Quelle est la différence entre `let` et `var` ?
