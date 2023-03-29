@@ -99,7 +99,7 @@ La délégation est un pattern qui permet à une classe de déléguer certaines 
 
 Elle facilite donc la communication entre classes et délivre des messages d'un objet à un autre lorsqu'un événement spécifique se déclenche.
 
-La délégation se met en place par le biais d'un protocole. La classe qui délègue aura une référence faible vers la classe qui exécutera les méthodes du protocole et fera les appels des méthodes de ce dernier. La classe qui impléméntera les méthodes du protocole aura une référence vers la classe qui délègue.
+La délégation se met en place par le biais d'un protocole. La classe qui délègue aura une référence faible (`weak`) vers la classe qui exécutera les méthodes du protocole et fera les appels des méthodes de ce dernier. La classe qui impléméntera les méthodes du protocole aura une référence vers la classe qui délègue.
 
 ### Qu'est-ce que l'observateur ?
 
@@ -189,6 +189,19 @@ En UIKit, le Controller se met en place avec un `ViewController` où la construc
 L'architecture **MVVM** permet donc de résoudre le problème de l'architecture **MVC** en isolant la logique métier dans un `ViewModel`. Elle permet également de réduire le couplage, et facilte la maintenance et la testabilité.
 
 **MVVM** se met en place avec la liaison de données (data binding) entre la vue et la vue modèle, où la vue s'abonne à un ou plusieurs événements de la vue modèle lorsqu'elle va se mettre à jour.
+
+### Qu'est-ce que l'architecture MVP ?
+
+**À NE PAS CONFONDRE AVEC MVP: Minimum Viable Product**
+
+**MVP** pour **Model View Presenter**.
+- Model: Modèles de données représentant une logique métier.
+- View: Représentation de l'interface utilisateur, de toutes les vues et de la gestion des actions utilisateur.
+- Presenter: L'intermédiaire entre la vue et le modèle, elle gère la logique métier et la présentation des données à faire afficher par la vue.
+
+L'architecture **MVP** permet donc de résoudre le problème de l'architecture **MVC** en isolant la logique métier dans un `ViewModel`. Elle permet également de réduire le couplage, et facilte la maintenance et la testabilité.
+
+**MVP** se met en place avec la délégation (`delegate`) entre la vue et la présentation, où la vue implémente les méthodes d'un protocole dédié pour effectuer sa mise à jour tandis que la présentation va avoir une référence faible vers la vue et va appeler les méthodes du protocole.
 
 ## <a name="git"></a>Questions sur Git
 
